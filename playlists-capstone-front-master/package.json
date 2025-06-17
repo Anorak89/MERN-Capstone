@@ -1,0 +1,61 @@
+{
+  "name": "playlists-frontend-auth",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.1.1",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/user-event": "^13.5.0",
+    "@vitejs/plugin-react": "^4.5.2",
+    "axios": "^1.10.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-redux": "^8.1.3",
+    "react-router-dom": "^6.30.1",
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.1",
+    "vite": "^6.3.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "proxy": "http://localhost:3003",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
+    "@testing-library/jest-dom": "^6.1.2",
+    "@testing-library/react": "^14.0.0",
+    "cypress": "^12.17.4",
+    "jest-environment-jsdom": "^29.6.4"
+  }
+}
