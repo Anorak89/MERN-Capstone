@@ -1,4 +1,3 @@
-const isTestEnv = process.env.NODE_ENV === "TEST_ENV";
 
 const info = (message) => {
   console.log(`[INFO] ${message}`);

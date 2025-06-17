@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=PRODUCTION_ENV node index.js",
-    "dev": "cross-env NODE_ENV=DEVELOPMENT_ENV nodemon index.js",
-    "test": "cross-env NODE_ENV=TEST_ENV jest --verbose --runInBand",
-    "e2e:test": "NODE_ENV=TEST_ENV node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
