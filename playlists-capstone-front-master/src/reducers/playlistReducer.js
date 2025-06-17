@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import playlistService from "../services/playlistService";
 import { notify } from "./notificationReducer";
+import { fetchUsers } from "./usersReducer";
 
 const initialState = [];
 
@@ -59,9 +60,11 @@ export const deletePlaylistAction = (id, user) => {
     try {
       playlistService.setAuthorization(user.token);
       await playlistService.removePlaylist(id);
-      dispatch(notify({ message: "Delete successfull", type: "info" }));
+      dispatch(notify({ message: "Delete successful", type: "info" }));
       dispatch(deletePlaylist(id));
+      dispatch(fetchUsers()); 
     } catch (error) {
+      console.error("Delete error:", error);
       dispatch(notify({ message: "Error deleting playlist", type: "warning" }));
     }
   };
