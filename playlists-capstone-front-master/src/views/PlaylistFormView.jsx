@@ -28,7 +28,6 @@ const PlaylistFormView = () => {
     setNumOfSongs("");
     setLikes("");
     navigate("/playlists");
-    navigate("/playlists");
   };
 
   return (

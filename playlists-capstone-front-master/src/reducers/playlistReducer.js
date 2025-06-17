@@ -94,6 +94,7 @@ export const createPlaylistAction = ({
           type: "info",
         })
       );
+      dispatch(fetchUsers());
     } catch (error) {
       dispatch(notify({ message: "Error creating playlist", type: "warning" }));
     }
